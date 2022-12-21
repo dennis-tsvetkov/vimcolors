@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 BASE_URL=https://raw.githubusercontent.com/dennis-tsvetkov/vimcolors/master
 
