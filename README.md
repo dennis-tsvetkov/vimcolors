@@ -1,1 +1,1 @@
-`curl https://raw.githubusercontent.com/dennis-tsvetkov/vimcolors/master/install.sh | sh`
+`curl https://raw.githubusercontent.com/dennis-tsvetkov/vimcolors/master/install.sh | sudo sh`
