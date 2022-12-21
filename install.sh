@@ -1,6 +1,10 @@
-#!/bin/bash
+!#/bin/bash
 
-script_dir=$(dirname $0)
+BASE_URL=https://raw.githubusercontent.com/dennis-tsvetkov/vimcolors/master
 
-cp -R $script_dir/.vim ~/
-cp $script_dir/.vimrc ~/
+# install color scheme into /usr/share/vim/vim*/colors/
+VIM_COLORS_DIR=$(ls -d /usr/share/vim/vim*/colors)
+curl "$BASE_URL/.vim/colors/monokai.vim" > $VIM_COLORS_DIR/monokai.vim
+
+# update vimrc
+curl $BASE_URL/.vimrc >> /etc/vim/vimrc.local
